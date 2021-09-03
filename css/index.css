@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.panding0 {
+  padding: 0 !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #ed4700;
+}
+
+.block .title {
+  width: 4vw;
+  padding-bottom: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  cursor: pointer;
+}
+.block .title2 {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block .title .icon {
+  width: 15px;
+  margin-bottom: 10px;
+}
+
+.block .title p {
+  writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.block .title span {
+  writing-mode: vertical-lr;
+  font-size: 12px;
+}
+
+.block:nth-child(2n) {
+  background-color: #003366;
+}
+
+.block .content {
+  height: 100vh;
+  width: 0px;
+  overflow: hidden;
+}
+.block .content .in {
+  overflow-y: scroll;
+  padding: 20px;
+  height: calc(100vh - 40px);
+}
+.block .content .in::-webkit-scrollbar {
+  display: none;
+}
+.menu {
+  background-color: #333;
+}
+.menu .title {
+  justify-content: flex-start !important;
+}
+.menu .title2 {
+  height: auto !important;
+}
+.menu .icon {
+  width: 30px !important;
+  padding: 5vh 0 0 0;
+}
+.menu .line {
+  width: 1px;
+  height: 5vh;
+  border-left: 1px solid #fff;
+  margin: 2vh auto;
+}
+.menu .beian {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/* 公司简介 */
+.about_page1 {
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_page {
+  padding: 10vh 0;
+  text-align: center;
+}
+/* 活动场地 */
+.venue_page1 {
+  padding-top: 50vh;
+  position: relative;
+}
+.venue_page1 > div {
+  position: absolute;
+}
+.venue_page ul {
+  display: flex;
+  padding-top: 2vh;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.venue_page ul li {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.venue_page .venue_title {
+  background-color: #003366;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+.public .venue_title {
+  background-color: #ed4700 !important;
+}
