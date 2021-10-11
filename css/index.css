@@ -8,8 +8,27 @@ body {
   width: 100vw;
   display: flex;
 }
+@font-face {
+  font-family: "iconfont"; /* Project id 1100843 */
+  src: url("https://at.alicdn.com/t/font_1100843_ujouoy7plwn.woff2?t=1633770941701")
+      format("woff2"),
+    url("https://at.alicdn.com/t/font_1100843_ujouoy7plwn.woff?t=1633770941701")
+      format("woff"),
+    url("https://at.alicdn.com/t/font_1100843_ujouoy7plwn.ttf?t=1633770941701")
+      format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 ul,
-li {
+li,
+h3,
+p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -124,15 +143,114 @@ img {
 /* 活动场地 */
 .venue_page1 {
   padding-top: 50vh;
+  width: 80%;
+  margin: 0 auto 80px auto;
   position: relative;
 }
 .venue_page1 > div {
   position: absolute;
 }
+.venue_page1 .top_left {
+  left: 20px;
+  width: 40%;
+  top: 16vh;
+}
+.venue_page1 .top_left h3 {
+  font-weight: 200;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.venue_page1 .top_left p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-bottom: 25px;
+}
+.venue_page1 .line {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+}
+.venue_page1 .top_right {
+  right: 20px;
+  top: 16vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.venue_page1 .top_right p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.venue_page1 .top_right .kuai {
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  background-color: #003366;
+}
+.venue_page1 .kuai2 {
+  background-color: #ed4700 !important;
+}
+.venue_page1 .title {
+  text-align: center;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 200;
+  position: relative;
+}
+.venue_page1 .title::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(135deg);
+}
+.venue_page {
+  width: 80%;
+  margin: 0 auto;
+}
+.venue_page .diamond {
+  margin-bottom: 40px;
+}
+.venue_page .diamond:last-child {
+  margin-bottom: 0;
+}
+.venue_page h3 {
+  background-color: #ed4700;
+  padding: 15px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.venue_page h3 b {
+  font-weight: normal;
+  margin-right: 5vw;
+}
+.venue_page h3 b::before {
+  content: "+";
+  padding-right: 10px;
+}
+.venue_page h3 span::before {
+  content: "--";
+  padding-right: 10px;
+}
+.venue_page .diamond_blue h3 {
+  background-color: #003366 !important;
+}
 .venue_page ul {
   display: flex;
-  padding-top: 2vh;
-  width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -147,8 +265,67 @@ img {
   color: #fff;
   text-align: center;
   padding: 20px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .public .venue_title {
   background-color: #ed4700 !important;
+}
+.kehu_title {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.kehu_title h3 {
+  width: 150px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #fff;
+  font-size: 1.3rem;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.kehu_list {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+.kehu_list li {
+  width: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.5rem;
+  box-sizing: border-box;
+}
+.kehu_list img {
+  max-height: 60px;
+  width: auto;
+  max-width: 100%;
+}
+.about_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_contact div {
+  padding: 0 15px;
+}
+.about_contact div:last-child {
+  color: #ed4700;
+}
+.about_contact p {
+  padding-bottom: 6px;
+}
+.about_contact p:last-child {
+  padding-bottom: 0;
+}
+.about_contact img {
+  max-height: 60px;
+  width: auto;
 }
